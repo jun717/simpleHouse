@@ -1,0 +1,243 @@
+                /* 모바일-first */
+#wrap{
+    max-width:1200px;
+    margin:0 auto;
+    background-color: #fff;
+}
+.container{
+    width:90%;
+    margin:0 auto;
+    max-width:1200px;
+}
+.float-clear:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+body{
+    background-color: beige;
+    font-size:16px;
+}
+/*Header*/
+header{
+    color:#fff;
+    background:url('../images/simple-house-01.jpg') no-repeat center center;
+    background-size:cover;
+    height:460px;
+    position:relative;
+    max-width:1200px;
+    margin:0 auto;
+}
+.title-group{
+    position:absolute;
+    bottom:84px;
+    left:13px;
+}
+.title-group .logo{
+    float:left;
+    padding-top:10px;
+}
+.title-group .title{
+    float:left;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+.title h1{
+    padding-bottom:10px;
+    font-size:2.1rem;
+}
+.title p{
+    font-size:1.1rem;
+}
+.nav{
+    position:absolute;
+    bottom:33px;
+    right:25px;
+}
+.nav .gnb li a:hover{
+    color:red;
+    transition:all ease 0.3s;
+}
+.gnb li{
+    float:left;
+    margin-left:30px;
+}
+.gnb li a{
+    color:#fff;
+    font-size:1rem;
+}
+
+.mobile-btn{
+    display:none
+}
+
+/*article-one*/
+.article-one{
+    text-align:center;
+}
+.article-one .container{
+    max-width:610px;
+}
+.article-one h2{
+    font-size:2rem;
+    padding:65px 0 35px 0;
+}
+.article-one p{
+    font-size:1rem;
+    padding-bottom:35px;
+    line-height:1.9;
+    color:#626364;
+}
+/*section-one*/
+.section-one{}
+.section-one .container{
+    padding-top:35px;
+}
+.tabs{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    margin-bottom:30px;
+}
+
+.tab{
+    border:1px solid rgba(0, 128, 0, 0.70);
+    padding:15px 30px;
+    font-size:1.2rem;
+    color:rgba(0, 128, 0, 0.70);
+    margin-right:20px;
+    margin-bottom:15px;
+    cursor:pointer;
+}
+.tab1{
+    margin-left:20px;
+}
+.tabs .tab:hover{
+    color:white;
+    background-color: rgba(0, 128, 0, 0.70);
+    transition:all ease 0.3s;
+}
+.foods{
+    display:flex;
+    flex-wrap:wrap;
+}
+.foods .item{
+    /* border:1px solid blue; */
+    width:78.125%; /*250px÷320px*/
+    margin:0 auto;
+}
+.foods .image img{
+    width:100%;
+    margin-bottom:25px;
+}
+.foods .text{}
+.foods .text h3{
+    font-size:1.3rem;
+    color:#1A6692;
+    margin-bottom:20px;
+}
+.foods .text p{
+    line-height:1.7;
+    margin-bottom:20px;
+    color:#626364;
+}
+.foods .text span{
+    font-size:1.2rem;
+    color:#2F956D;
+    margin-bottom:45px;
+    display:block;
+}
+
+
+
+
+/*article-two*/
+.article-two{}
+.article-two .container{
+    max-width:500px;
+}
+.article-two .item{
+    margin-top:90px;
+}
+.article-two .image{}
+.article-two .image img{
+    width:100%;
+}
+.article-two .text{
+    margin-top:35px;
+    color:#626364;
+}
+
+.article-two h3{
+    padding-bottom:20px;
+    color:#1a6692;
+    font-size:1.3rem;
+
+}
+.article-two p{
+    line-height:1.9;
+}
+.article-two .item a{
+    border:1px solid #ccc;
+    float:right;
+    padding:10px 30px;
+    margin:50px 0 40px 0;
+    color:#626364;
+}
+
+/*Footer*/
+footer p{
+    text-align:center;
+    padding:25px 0;
+    color:#626364;
+}    
+
+                /* 태블릿 */
+@media all and (min-width: 768px){
+    /*section-one*/
+    .foods{
+        justify-content: center;
+    }
+    .foods .item{
+        width:35%;
+        margin:15px;
+    }
+}
+                /* 데스크탑 */
+@media all and (min-width: 992px){
+    /*Header*/
+    .title-group{
+        position:absolute;
+        bottom:43px;
+        left:50px;
+    }
+    .nav{
+        position:absolute;
+        bottom:65px;
+        right:70px;
+    }
+    .gnb li{
+        margin-left:45px;
+    }
+    /*article-two*/
+    .article-two .container{
+        max-width:100%;
+    }
+    .article-two .item{
+    }
+    .article-two .image{
+        float:left;
+        width:50%;
+    }
+    .article-two .text{
+        float:left;
+        width:50%;
+        margin-top:5px;
+        padding:0 30px;
+        max-width:510px;
+    }
+        /*section-one*/
+        .foods .item{
+            width:20%;
+        }
+}
